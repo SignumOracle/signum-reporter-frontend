@@ -45,7 +45,7 @@ var App = {
       App.contracts.Contest = new web3.eth.Contract(abi);
       console.log(App.chainId)
       if (App.chainId === 369) {
-        App.contracts.Contest.options.address = "0x09D07923EA339A2aDe40f44BCEE74b2A88a99a54" //pulsechain
+        App.contracts.Contest.options.address = "0x25baEbFAc231836bd5AFd1F211f6E8306f2BCC1e" //pulsechain
       }
       //console.log(App.chainId)
       //console.log("Contract initialized");
@@ -62,7 +62,7 @@ var App = {
     $.getJSON(pathToAbi, function (abi) {
       App.contracts.Token = new web3.eth.Contract(abi);
       if (App.chainId === 369) {
-        App.contracts.Token.options.address = "0x113c82608A84bD47eE90a7A498b2663f3A7B977C" //pulsechain 
+        App.contracts.Token.options.address = "0x410a1Cb708e0724d1f9013EE31945E5E3F978a44" //pulsechain 
       } 
       //console.log("Token contract initialized");
       //console.log("Token contract address: ", App.contracts.Token.options.address);
