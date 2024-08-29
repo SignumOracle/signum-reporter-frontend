@@ -1,35 +1,52 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'),
+        url('./assets/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Poppins Light'),
+        url('./assets/Poppins/Poppins-Light.ttf') format('truetype');
+}
+
 body {
-    background:white;
+    background:#262626;
 }
 h1 {
-    color: #9b810d;
-    font: 1.3rem 'Inconsolata', monospace;  
+    color: #fbc51b;
+    font: 1.3rem 'Poppins Light';  
     font-size:15px;
     text-align: center;
 }
 h2 {
-    font: 1.3rem 'Inconsolata', monospace;  
+    font: 1.3rem 'Poppins Light';
     font-size:20px;
-    color: #9b810d; 
+    color: #fbc51b; 
 }
 p {
-    font: 1.3rem 'Inconsolata', monospace;  
+    font: 1.3rem 'Poppins Light';
     font-size:15px;
     color: #262626; 
 }
 .box {
-    border: 2px solid black;
+    border: 2px solid #fbc51b;
+    border-radius: 5px;
     margin-left: 25px;
     margin-top: 25px;
     margin-right: 25px;
     margin-bottom: 25px;
     padding: 1ex;
     color: #262626;  
-    font: 1.3rem 'Inconsolata', monospace;  
+    font: 1.3rem 'Poppins Light';
     font-size: 16px;
 }
 a {
-    font: 1.3rem 'Inconsolata', monospace;  
+    font: 1.3rem 'Poppins Light';
     font-size:15px;
     color: #2714ff;
 }

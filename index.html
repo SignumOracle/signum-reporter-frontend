@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One-off Reporter Page</title>
+    <title>Signum - One-off Reporter Page</title>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header>
-      <h1>one-off report page</h1>
+      <div style="justify-content: space-between; display: flex">
+      <a>
+        <img className="TellorLogo" style="width: 50px; padding: 1%" src="assets/signum_logo.png" alt="Signum Logo" />
+      </a>
+      <p style="color: #fbc51b; text-decoration: underline">TEST NETWORK</p>
+      </div>
     </header>
     <div class="box">
 
@@ -29,7 +34,7 @@
                 
         <h2>submit your value:</h2>
         <p> 
-          <a target="_blank" href="https://queryidbuilder.herokuapp.com/spotprice">obtain query id & query data here</a>
+          <a target="_blank" href="https://testquery.signum.run">obtain query id & query data here</a>
         </p>
         <p><input style="width: 485px;" type="text" id="_queryId" placeholder="_queryId (bytes32)"/></p>
         <p><input style="width: 350px;"type="text" id="_value" placeholder="_value (bytes)"/></p>
@@ -38,9 +43,9 @@
         <button id="reportValue" onclick="App.reportValue()">Submit Value</button>
       </section>
 
-      <p>(*staked srb is required to report. if you do not have SRB already staked, stake below) </p>
+      <p>(*staked stt is required to report. if you do not have SRB already staked, stake below) </p>
 
-        <h2>stake the srb token:</h2>
+        <h2>stake the stt token:</h2>
         <input style="width: 285px;" type="text" id="stakeAmount" placeholder="actual # of tokens i.e. '100' for 100 tokens"/>
         <button id="stakeToken" onclick="App.stakeToken()">stake</button>
         
