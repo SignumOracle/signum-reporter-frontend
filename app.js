@@ -97,7 +97,7 @@ var App = {
       .call()
       .then(function (result) {
         let tokenBalance = BigInt(result) / BigInt(10 ** App.tokenDecimals);
-        let tokenBalanceString = tokenBalance.toString() + " SRB";
+        let tokenBalanceString = tokenBalance.toString() + " STT";
         document.getElementById("tokenBalance").innerHTML = tokenBalanceString;
       });
   },
@@ -108,7 +108,7 @@ var App = {
       .call()
       .then(function (result) {
         let stakedTokenBalance = BigInt(result) / BigInt(10 ** App.tokenDecimals);
-        let stakedTokenBalanceString = stakedTokenBalance.toString() + " SRB";
+        let stakedTokenBalanceString = stakedTokenBalance.toString() + " STT";
         document.getElementById("stakedTokenBalance").innerHTML = stakedTokenBalanceString;
       });
   },
